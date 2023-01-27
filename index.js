@@ -21,9 +21,9 @@ app.get("/", async(req, res) => {
 });
 
 app.use("/user", userRouter);
-app.use("/user/order", orderRouter);
-app.use("/cart", cartRouter);
-app.use("/product", productRouter)
+// app.use("/user/order", orderRouter);
+// app.use("/cart", cartRouter);
+// app.use("/product", productRouter)
 
 
 
