@@ -9,9 +9,9 @@ const port = process.env.port
 
 //Import All the Roouters Here
 const {userRouter} = require("./Router/user.route");
-const {orderRouter} = require("./Router/order.route")
-const {cartRouter} = require("./Router/cart.route");
-const  {productRouter} = require("./Router/product.route");
+// const {orderRouter} = require("./Router/order.route")
+// const {cartRouter} = require("./Router/cart.route");
+// const  {productRouter} = require("./Router/product.route");
 
 const app = express();
 app.use(express.json());
