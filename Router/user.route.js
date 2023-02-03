@@ -8,7 +8,9 @@ require("dotenv").config();
 
 
 userRouter.get("/", async (req, res) => {
-  let users= await UserModel.find().pretty();
+
+
+  let users= await UserModel.find() // Dont add pretty it will result error
   res.send(users);
 });
 

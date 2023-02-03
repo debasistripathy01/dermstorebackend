@@ -3,6 +3,9 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 const { connection }= require("./config/db");
 const jwt = require("jsonwebtoken");
+const app = express();
+app.use(express.json());
+
 const bcrypt = require("bcrypt");
 const {UserModel} = require("./models/user.model")
 const port = process.env.port
@@ -13,8 +16,7 @@ const {orderRouter} = require("./Router/order.route")
 const {cartRouter} = require("./Router/cart.route");
 const  {productRouter} = require("./Router/product.route");
 
-const app = express();
-app.use(express.json());
+
 
 app.get("/", async(req, res) => {
     res.send("homepage routes are /user /user/order /cart /product");
